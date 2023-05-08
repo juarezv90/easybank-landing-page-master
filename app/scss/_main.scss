@@ -1,0 +1,50 @@
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.intro {
+  position: relative;
+  z-index: 0;
+
+  &__display {
+    position: relative;
+
+    & .phones {
+      width: 100%;
+      margin-top: -50px;
+      z-index: 1000;
+    }
+  }
+
+  &__splash {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 27px;
+    color: $GrayishBlue;
+
+    h1 {
+      color: $darkBlue;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+      font-weight: 300;
+      font-size: 0.87rem;
+      line-height: 1.3rem;
+    }
+  }
+
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px;
+  }
+}

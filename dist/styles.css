@@ -9,17 +9,24 @@ html {
 *::before {
   box-sizing: inherit;
   line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  outline: 1px dashed red;
 }
 
-body, button {
+body,
+button {
   font-family: "Public Sans", sans-serif;
+  letter-spacing: -0.1px;
 }
 
 li {
   list-style: none;
 }
 
-a, a:focus, a:hover {
+a,
+a:focus,
+a:hover {
   text-decoration: none;
   color: hsl(233, 8%, 62%);
 }
@@ -28,55 +35,113 @@ a, a:focus, a:hover {
   width: 100%;
   display: flex;
 }
-.flex__ji_sb {
+.flex__jc_sb {
   justify-content: space-between;
+}
+.flex__jc_c {
+  justify-content: center;
 }
 .flex__ai_c {
   align-items: center;
 }
 
+button {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  width: 20ch;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
 header {
+  background: hsl(0, 0%, 100%);
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
   padding: 24px;
+  z-index: 1000;
 }
-
-.hamburger {
-  cursor: pointer;
-}
-@media (min-width: 500px) {
-  .hamburger {
+@media (max-width: 1023px) {
+  header button {
     display: none;
   }
 }
-.hamburger span {
+
+nav .navLinks > li:not(:last-child) {
+  margin-right: 15px;
+}
+@media (max-width: 1023px) {
+  nav .navLinks {
+    display: none;
+  }
+}
+nav .hamburger {
+  cursor: pointer;
+}
+@media (min-width: 1023px) {
+  nav .hamburger {
+    display: none;
+  }
+}
+nav .hamburger span {
   display: block;
   width: 26px;
   background-color: hsl(233, 26%, 24%);
   height: 2px;
 }
-.hamburger > :not(:last-child) {
+nav .hamburger > :not(:last-child) {
   margin-bottom: 4px;
 }
 
-nav .navLinks {
-  width: 400px;
-}
-@media (max-width: 500px) {
-  nav .navLinks {
-    display: none;
-  }
+main {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-button {
-  background-color: transparent;
-  background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-  outline: none;
-  border: none;
-  font-size: 1.2rem;
+.intro {
+  position: relative;
+  z-index: 0;
+}
+.intro__display {
+  position: relative;
+}
+.intro__display .phones {
+  width: 100%;
+  margin-top: -50px;
+  z-index: 1000;
+}
+.intro__splash {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 27px;
+  color: hsl(233, 8%, 62%);
+}
+.intro__splash h1 {
+  color: hsl(233, 26%, 24%);
   font-weight: 400;
-  color: white;
-  padding: 0.25rem 1rem;
-  border-radius: 200px;
-  cursor: pointer;
+  text-align: center;
+}
+.intro__splash p {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 0.87rem;
+  line-height: 1.3rem;
+}
+@media (min-width: 600px) {
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px;
+  }
 }/*# sourceMappingURL=styles.css.map */
