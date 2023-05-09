@@ -187,4 +187,36 @@ nav .hamburger > :not(:last-child) {
     font-size: 1rem;
     letter-spacing: 0;
   }
+}
+
+.bank_detail {
+  background-color: hsl(220, 16%, 96%);
+  color: hsl(233, 8%, 62%);
+  padding: 2rem 3rem;
+}
+.bank_detail h2,
+.bank_detail h3 {
+  color: hsl(233, 26%, 24%);
+  font-weight: 400;
+}
+.bank_detail p {
+  font-size: 0.7rem;
+}
+.bank_detail__heading {
+  text-align: center;
+}
+.bank_detail__heading h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.375rem;
+}
+.bank_detail__cards .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.375rem;
+  margin-top: 1.375rem;
+}
+.bank_detail__cards .cards p {
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

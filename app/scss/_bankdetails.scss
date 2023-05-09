@@ -1,0 +1,40 @@
+.bank_detail {
+  background-color: $LightGrayishBlue;
+  color: $GrayishBlue; 
+  padding: 2rem 3rem;
+
+  h2,
+  h3 {
+    color: $darkBlue;
+    font-weight: 400;
+  }
+
+  p{
+    font-size: 0.70rem;
+  }
+
+  &__heading {
+    text-align: center;
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.375rem;
+    }
+  }
+
+  &__cards {
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.375rem;
+        margin-top: 1.375rem;
+        
+        p {
+            text-align: center;
+        }
+    }
+  }
+}
