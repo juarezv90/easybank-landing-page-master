@@ -15,10 +15,9 @@ html {
   outline: 1px dashed red;
 }
 
-body,
-button {
+body {
   font-family: "Public Sans", sans-serif;
-  letter-spacing: -.1px;
+  letter-spacing: -0.1px;
 }
 
 li {
@@ -61,4 +60,20 @@ button {
   padding: 0.5rem 1.2rem;
   border-radius: 200px;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: $White;
+    opacity: 0%;
+  }
+  &:hover::after {
+    opacity: 65%;
+  }
 }
