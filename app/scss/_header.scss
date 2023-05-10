@@ -1,7 +1,8 @@
 header {
-  background:$White;
+  background: $White;
   position: relative;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 24px;
   z-index: 1000;
@@ -10,10 +11,13 @@ header {
       display: none;
     }
   }
+
+  
 }
 
 nav {
-  
+  position: relative;
+  width: 100%;
 
   .navLinks {
     > li:not(:last-child) {
@@ -26,6 +30,9 @@ nav {
   }
 
   .hamburger {
+    position: relative;
+    width: 1.4375rem;
+    height: 12px;
     cursor: pointer;
 
     @media (min-width: 1023px) {
@@ -42,4 +49,34 @@ nav {
       margin-bottom: 4px;
     }
   }
+}
+
+.mobile_menu {
+  background-image: linear-gradient($darkBlue, transparent);
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  height: 37.5rem;
+  padding: 1.5rem;
+  z-index: 10000;
+
+  &__links {
+    display: flex;
+    padding: 2rem;
+    gap: 1.625rem;
+    background-color: $White;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+
+    a {
+      color: $darkBlue;
+      font-weight: 700;
+    }
+  }
+}
+.hidden {
+  display: none;
 }
