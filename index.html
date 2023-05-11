@@ -19,6 +19,10 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        position: absolute;
+        bottom: .5rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -29,18 +33,16 @@
     <header>
       <nav class="flex flex__jc_sb flex__ai_c">
         <img src="./images/logo.svg" alt="" />
-        <div class="hamburger" id="burgermenu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="hamburger" >
+          <img src="/images/icon-hamburger.svg" id="burgermenu" alt="mobile menu button">
         </div>
 
         <div class="flex flex__jc_c flex__ai_c navLinks">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Careers</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
         </div>
 
         <button>Request Invite</button>
@@ -48,11 +50,11 @@
     </header>
     <div class="mobile_menu hidden" id="mobilemenu">
       <div class="mobile_menu__links">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Careers</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
       </div>
     </div>
     <div class="hero">
@@ -205,25 +207,6 @@
         <a href="https://victorjuarez.dev" target="_blank">Victor Juarez</a>.
       </div>
     </footer>
-
-    <!-- 
-
-  
-  
-  
-  
-  
-  
-
-  Request Invite
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   </body>
   <script src="/app/js/script.js" defer></script>
-  r
 </html>

@@ -38,16 +38,6 @@ nav {
     @media (min-width: 1023px) {
       display: none;
     }
-    span {
-      display: block;
-      width: 26px;
-      background-color: $darkBlue;
-      height: 2px;
-    }
-
-    > :not(:last-child) {
-      margin-bottom: 4px;
-    }
   }
 }
 

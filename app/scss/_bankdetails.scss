@@ -48,7 +48,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 8.75rem 6.25rem;
+    padding: 8.75rem 10.125rem;
 
     p {
       font-size: 1rem;
@@ -58,6 +58,7 @@
     &__heading {
       width: 38.5rem;
       h2 {
+        text-align: start;
         font-size: 2rem;
       }
     }
@@ -70,7 +71,6 @@
       .cards {
         align-items: start;
         justify-content: start;
-        width: 15rem;
         margin-top: 0;
         h3 {
           font-size: 1.25rem;
