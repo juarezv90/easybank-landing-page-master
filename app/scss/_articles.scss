@@ -9,6 +9,7 @@
   h3 {
     color: $darkBlue;
     font-weight: 400;
+    transition-duration: 400ms;
   }
 
   &__title {
@@ -78,6 +79,12 @@
       flex-direction: row;
       gap: 2rem;
       padding: 56px 0 0 0;
+      
+      h3:hover {
+        color: $limeGreen;
+        cursor: pointer;
+        transition-duration: 400ms;
+      }
     }
   }
 }

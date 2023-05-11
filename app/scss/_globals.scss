@@ -67,7 +67,7 @@ button {
     content: "";
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     height: 100%;
     width: 100%;
     background-color: $White;
@@ -76,4 +76,14 @@ button {
   &:hover::after {
     opacity: 65%;
   }
+}
+
+path {
+  transition-duration: 400ms;
+}
+
+path:hover {
+  fill: $limeGreen;
+  cursor: pointer;
+  transition-duration: 400ms;
 }

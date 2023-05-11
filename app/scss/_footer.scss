@@ -17,11 +17,6 @@
       & > *:not(:last-child) {
         margin-right: 0.75rem;
       }
-
-      & > * {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
     }
   }
 
@@ -49,23 +44,31 @@
   @media (min-width: 64rem) {
     display: flex;
     gap: 7.5rem;
-    padding: 45px 164px ;
-    
+    padding: 45px 164px;
+
+    a {
+      transition-duration: 400ms;
+    }
+
+    a:hover {
+      transition-duration: 400ms;
+      color: $limeGreen;
+    }
 
     & > * {
-        justify-content: start;
-        align-items: start;
-        font-size: 1rem;
-        margin: 0;
+      justify-content: start;
+      align-items: start;
+      font-size: 1rem;
+      margin: 0;
     }
 
     &__logo {
-        gap: 3.75rem;
+      gap: 3.75rem;
     }
 
     &__button {
-        align-items: end;
-        margin-left: auto;
+      align-items: end;
+      margin-left: auto;
     }
   }
 }

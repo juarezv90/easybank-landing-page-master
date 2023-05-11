@@ -72,6 +72,16 @@ button:hover::after {
   opacity: 65%;
 }
 
+path {
+  transition-duration: 400ms;
+}
+
+path:hover {
+  fill: hsl(136, 65%, 51%);
+  cursor: pointer;
+  transition-duration: 400ms;
+}
+
 header {
   background: hsl(0, 0%, 100%);
   position: relative;
@@ -94,8 +104,31 @@ nav {
 nav .navLinks > li:not(:last-child) {
   margin-right: 15px;
 }
+nav .navLinks li a {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+nav .navLinks li a:hover {
+  color: hsl(233, 26%, 24%);
+}
+nav .navLinks li a::after {
+  content: "";
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 4px;
+  transition-duration: 1s;
+}
+nav .navLinks li a:hover::after {
+  opacity: 1;
+  transition-duration: 1s;
+}
 @media (max-width: 1023px) {
-  nav .navLinks {
+  nav {
     display: none;
   }
 }
@@ -134,7 +167,7 @@ nav .hamburger {
 .mobile_menu__links a {
   color: hsl(233, 26%, 24%);
   font-weight: 700;
-} 
+}
 
 .hidden {
   display: none;
@@ -149,7 +182,7 @@ nav .hamburger {
   width: 100%;
   height: 16.25rem;
   background-color: transparent;
-  background-image: url("../images/bg-intro-mobile.svg");
+  background-image: url("../../images/bg-intro-mobile.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -161,7 +194,7 @@ nav .hamburger {
   height: 100%;
   width: 100%;
   background-color: transparent;
-  background-image: url("../images/image-mockups.png");
+  background-image: url("../../images/image-mockups.png");
   background-position: center bottom -10px;
   background-size: 19.31rem auto;
   background-repeat: no-repeat;
@@ -182,6 +215,7 @@ nav .hamburger {
 }
 .hero__text p {
   font-size: 0.75rem;
+  color: hsl(233, 8%, 62%);
 }
 @media (min-width: 1023px) {
   .hero {
@@ -191,7 +225,7 @@ nav .hamburger {
   .hero__image {
     width: 46.875rem;
     height: 41.25rem;
-    background-image: url("../images/bg-intro-desktop.svg");
+    background-image: url("../../images/bg-intro-desktop.svg");
     background-position: bottom -7rem left -3rem;
     background-size: unset;
     overflow: unset;
@@ -303,6 +337,7 @@ nav .hamburger {
 .articles h3 {
   color: hsl(233, 26%, 24%);
   font-weight: 400;
+  transition-duration: 400ms;
 }
 .articles__title {
   font-size: 1.375rem;
@@ -365,6 +400,11 @@ nav .hamburger {
     gap: 2rem;
     padding: 56px 0 0 0;
   }
+  .articles__cards h3:hover {
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+    transition-duration: 400ms;
+  }
 }
 
 .footer {
@@ -384,10 +424,6 @@ nav .hamburger {
 }
 .footer__logo .social_icons > *:not(:last-child) {
   margin-right: 0.75rem;
-}
-.footer__logo .social_icons > * {
-  width: 1.5rem;
-  height: 1.5rem;
 }
 .footer__links_col1, .footer__links_col2 {
   display: flex;
@@ -412,6 +448,13 @@ nav .hamburger {
     display: flex;
     gap: 7.5rem;
     padding: 45px 164px;
+  }
+  .footer a {
+    transition-duration: 400ms;
+  }
+  .footer a:hover {
+    transition-duration: 400ms;
+    color: hsl(136, 65%, 51%);
   }
   .footer > * {
     justify-content: start;
