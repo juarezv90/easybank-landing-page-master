@@ -132,6 +132,11 @@ nav .navLinks li a:hover::after {
     display: none;
   }
 }
+@media (min-width: 1024px) {
+  nav .navLinks {
+    display: flex;
+  }
+}
 nav .hamburger {
   position: relative;
   width: 1.4375rem;
