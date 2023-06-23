@@ -48,12 +48,13 @@ nav {
     li a:hover::after {
       opacity: 1;
       transition-duration: 1s;
-    }
-  }
-
-  @media (max-width: 1023px) {
+    } 
+    @media (max-width: 1023px) {
     display: none;
   }
+  }
+
+ 
 
   .hamburger {
     position: relative;
@@ -93,6 +94,7 @@ nav {
     }
   }
 }
+
 .hidden {
   display: none;
 }

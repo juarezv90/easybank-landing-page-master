@@ -128,7 +128,7 @@ nav .navLinks li a:hover::after {
   transition-duration: 1s;
 }
 @media (max-width: 1023px) {
-  nav {
+  nav .navLinks {
     display: none;
   }
 }
